@@ -1,0 +1,106 @@
+ /* SECTION */
+.section{
+    clear: both;
+    padding: 6px;
+    margin: 8px;
+}
+
+/* GROUPING */
+.Row{
+    zoom: 1;
+}
+.Row:before,
+.Row:after{
+    content: "";
+    display: table;
+
+}
+.Row:after{
+    clear: both;
+}
+
+/* Grid cloumn setup */
+
+.col{
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+.col:first-child{ margin-left: 0;}
+/* remove margins as all go full width at 480 pixels */  
+@media only screen and (max-width: 480px) {
+    .col{
+        margin: 0;
+    }
+}
+/* GRID OF TWO */
+.span-2-0f-2{
+    width: 100%;
+}
+.span-1-of-2{
+    width: 49.2%;
+}
+/* GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width:480px) { 
+    .span-2-0f-2{
+        width: 100%;
+    }
+    .span-1-of-2{
+        width: 100%;
+    }
+}
+/* GRID OF THREE */
+
+.span-3-of-3{
+    width: 100px;
+}
+.span-2-0f-3{
+    width: 23.8%;
+}
+.span-1-of-3{
+    width: 32.26;
+}
+
+
+/* GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width:480px) {
+     .span-3-of-3 {
+         width: 100%;
+     }
+     .span-2-of-3{
+         width: 100%;
+     }
+     .span-1-of-3{
+         width: 100%;
+     }
+}
+
+/* GRID OF FOUR */
+
+.span-4-of-4 {
+    width: 23.8%;
+}
+.span-3-of-4 {
+    width: 23.8%;
+}
+.span-2-0f-4 {
+    width: 23.8%;
+}
+.span-1-of-4 {
+    width: 23.8%;
+}
+/*GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+    .span-4-of-4 {
+        width: 100%;
+    }
+    .span-3-of-4 {
+        width: 100%;
+    }
+    .span-2-0f-4 {
+        width: 100%;
+    }
+    .span-1-of-4 {
+        width: 100%;
+    }
+}

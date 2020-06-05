@@ -1,0 +1,315 @@
+/* Basic setup for the CSS stling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    
+    
+    
+}
+html{
+    background-color: #fff;
+    color: #fff;
+    font-family: 'monospace';
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+    
+    
+}
+.row{
+    margin-left: 10px;
+    padding: 15px;
+    size: 25px;
+}
+/* ----------------------------------------- */
+                /* HEADER */
+/* ----------------------------------------- */
+header{
+    background-image: url(image/you.png);
+    height: 100vh;
+    background-size:  cover;
+    background-position: center;
+    
+}
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 30%;
+    left: 10%;
+}
+.logo{
+    height: 250px;
+    width: 200px;
+    float: left;
+    margin-top: 20px;
+
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 35px;
+
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px transparent ;
+    transition: border-bottom 0.3s;
+    
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid orange ;
+
+}
+/* ------------------------------------*/
+             /*PLACEHOLDER */
+/*-------------------------------------*/
+
+.enter{
+    width: 200px;
+    margin: 5px;
+    height: 30px;
+    text-align: center;
+    margin-left: 350px;
+    display: inline-block;
+    border-radius: 40px;
+    margin-left: 400px;
+    background-color: transparent;
+    font-size: medium;
+    color: black;  
+}
+
+
+
+
+
+
+/* ----------------------------------- */
+         /* REUSEABLE COMPONENT */
+/* ----------------------------------- */
+h1{
+    margin: 0;
+    color: #fff;
+    font-size: 240%; 
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    margin-left: 250px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+h2{
+    font-weight: 200;
+    text-transform: initial;
+    word-spacing: 2px;
+    margin-left: 400px;
+    color: #fff;
+}
+/* ---------------------------------- */
+           /*BUTTONS*/
+/*-----------------------------------*/
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 0px 25px 0px 25px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    margin-top: 20px;
+    margin-left: 450px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-full:link,
+.btn:visited{
+    background-color: orange;
+    color: whitesmoke;
+    margin-right: 30px;
+    border: 1px solid;
+    
+}
+.btn-ghost:link,
+.btn:visited{
+    border: 1px solid orange;
+    
+}
+.btn:hover,
+.btn:active{
+    background-color: #cf6d17;
+}
+/*----------------------------------------------------------*/
+                 /* The section logo */
+/*----------------------------------------------------------*/                 
+.p-logo{
+    size: 20px;
+    height: 100px;
+    width: auto;
+    margin-left: 10px;
+}
+.a-logo{
+    size: 20px;
+    height: 100px;
+    width: 150px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+.c-logo{
+    size: 20px;
+    height: 80px;
+    width: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+.t-logo{
+    size: 20px;
+    height: 80px;
+    width: auto;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+/* ---------------------------------------------------- */
+/*                         Section                     */
+/*-----------------------------------------------------*/
+.section-features{
+    background-color: #fff;
+}
+.col{
+    background-color: #fff;
+}
+
+.obj{
+    margin-top: 20px;
+
+}
+.new-obj{
+    margin-top: 0px;
+    margin-bottom: 25px;
+    color: black;
+    background: rgb(81, 206, 255);   
+    border-radius: 0px 0px 20px 20px;
+    width: left 100%;
+    padding-left: 1%;
+    margin-left: 0px;
+
+}
+.long-copy{
+    margin-left: 40px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 145%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.old-obj{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.format1{
+    background: linear-gradient(red, yellow);
+    color: white;
+    opacity: 1;
+    background-size: cover;
+    border-bottom: 10px;
+    display: inline-block;
+    transition: transform 0.5s;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.format1:hover{
+    transform: scale(0.95) ;
+    opacity: 0.7;
+}
+.format2{
+    background: linear-gradient(to bottom, #feada6, #f5efef);
+    color: white;
+    opacity: 1;
+    background-size: cover;
+    border-bottom: 10px;
+    display: inline-block;
+    transition: transform 0.5s;
+    border-radius: 20px;
+}
+.format2:hover{
+    transform: scale(0.95) ;
+    opacity: 0.7;
+}
+.format3{
+    background: linear-gradient(to bottom, rgb(163, 233, 163), rgb(10, 204, 230));
+    border-radius: 20px;
+    color: white;
+    opacity: 1;
+    background-size: cover;
+    border-bottom: 10px;
+    display: inline-block;
+    transition: transform 0.5s;
+
+}
+.format3:hover{
+    transform: scale(0.95) ;
+    opacity: 0.7;
+}
+.format4{
+    background: radial-gradient(DodgerBlue,Violet);
+    border-radius: 20px;
+    color: white;
+    opacity: 1;
+    background-size: cover;
+    border-bottom: 10px;
+    display: inline-block;
+    transition: transform 0.5s;
+
+}
+.format4:hover{
+    transform: scale(0.95) ;
+    opacity: 0.7;
+}
+
+/*------------------------------------------------------------------------*/
+                    /*section 2*/
+/*------------------------------------------------------------------------*/
+.section-features{
+    background-color: #fff;
+}
+.Row{
+    text-align: center;
+    background-color: #fff;
+}
+.new-obj{
+    text-align: center;
+    margin-right: 100px;
+    margin-left: -0.05px;
+    margin-left: 70px;
+}
+.section-inline{
+     text-align: center;
+     margin: 30px;
+     margin-top: 30px;
+     margin-right:150px;
+     background-color: #fff;
+     
+}    
+.section-2-inline{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #fff;
+
+} 
+.section-2{
+    background-color: #fff ;
+}              
+
+
+
